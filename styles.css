@@ -1,0 +1,434 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #181818;
+    color: white;
+    font-family: Georgia, serif;
+    font-size: 16px;
+}
+
+.site {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    background-color: #194453;
+    border-bottom: none !important;
+    min-height: 92px;
+    padding: 5px 10px !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between !important;
+}
+
+header > a {
+    margin: 0 !important;
+}
+
+header img {
+    width: 145px !important;
+    height: 75px !important;
+    object-fit: contain;
+}
+
+header span {
+    display: none;
+}
+
+header .nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+header .nav-link {
+    color: white !important;
+    background: none !important;
+    font-size: 17px;
+    padding: 5px !important;
+    text-transform: uppercase;
+}
+
+header .nav-link:hover {
+    color: #b9cbd1 !important;
+}
+
+
+footer {
+    background-color: #194453;
+    margin-top: auto !important;
+    margin-bottom: 0 !important;
+    padding: 25px 10px !important;
+}
+
+footer .nav {
+    display: none;
+}
+
+footer p {
+    color: white !important;
+    margin: 0;
+    text-align: center;
+}
+
+
+.home-page .px-4.py-5 {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.home-page .px-4 > img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 !important;
+}
+
+.home-page h1 {
+    display: block;
+    color: white !important;
+}
+
+.home-page .col-lg-6 {
+    display: block;
+}
+
+.home-page .lead {
+    color: white !important;
+}
+
+.home-page .btn-primary {
+    background-color: #194453 !important;
+    border-color: #194453 !important;
+    color: white !important;
+}
+
+.home-page .btn-primary:hover {
+    background-color: #24596b !important;
+    border-color: #24596b !important;
+}
+
+
+.home-page .social-section {
+    padding: 30px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.home-page .social-heading {
+    color: white;
+    font-size: 20px;
+}
+
+.home-page .social-links {
+    display: grid;
+    grid-template-columns: 150px 150px;
+    grid-template-rows: auto auto;
+    gap: 15px;
+}
+
+.home-page .social-link {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: underline;
+}
+
+.home-page .social-link img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.home-page .nav-underline .nav-item {
+    width: 22%;
+}
+
+.home-page .nav-underline .nav-link,
+.home-page .nav-underline .nav-link.active {
+    color: white !important;
+    background-color: transparent !important;
+    text-decoration: underline;
+    padding: 8px !important;
+}
+
+
+.about-page h2 {
+    color: white;
+    font-size: 28px;
+    font-weight: normal;
+    text-align: center;
+    margin: 35px 0 20px;
+}
+
+.about-page > .site > p {
+    background-color: transparent;
+    color: white;
+    width: 70% !important;
+    height: auto;
+    margin: 20px auto 50px !important;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+.about-page .member-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    width: 65%;
+    margin: 30px auto;
+}
+
+.about-page .card {
+    display: flex;
+    flex-direction: column;
+    width: 100% !important;
+    margin: 0;
+    padding: 15px;
+    background-color: #194453;
+    border: none;
+    border-radius: 0;
+    color: white;
+}
+
+.about-page .card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.about-page .card-title {
+    color: white;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.about-page .card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    background-color: transparent;
+}
+
+.about-page .card:first-child img {
+    object-position: center 20%;
+}
+
+.about-page .card-body {
+    background-color: transparent;
+    color: white;
+    min-height: 130px;
+    margin-top: 10px;
+    padding: 10px 5px;
+}
+
+.about-page .card-text {
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+.music-page h2 {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 15px 12px;
+}
+
+.music-page .ratio {
+    width: 82%;
+    margin: 15px auto 26px;
+    background-color: white;
+}
+
+.music-page iframe {
+    border: none;
+}
+
+
+.discography-page .site > .d-flex {
+    display: flex !important;
+    align-items: center;
+    gap: 25px;
+    margin: 25px 8%;
+}
+
+.discography-page .flex-shrink-0 img {
+    width: 160px !important;
+    height: 160px !important;
+    object-fit: cover;
+}
+
+.discography-page .flex-grow-1 {
+    background-color: transparent;
+    color: white;
+    min-height: 160px;
+    padding: 15px;
+    font-size: 16px;
+}
+
+.discography-page .flex-grow-1 p {
+    color: white;
+    font-size: 16px;
+    margin: 0;
+}
+
+
+.tour-page .container > img {
+    width: 95%;
+    max-width: 800px;
+    height: auto;
+    margin: 15px auto 10px !important;
+}
+
+.tour-page h3 {
+    font-size: 16px;
+    font-weight: normal;
+    text-decoration: underline;
+    margin-bottom: 12px;
+}
+
+.tour-page .row {
+    margin: 0 5px 25px;
+}
+
+.tour-page .col {
+    text-align: left;
+    padding: 10px;
+}
+
+.tour-page p {
+    font-size: 13px;
+    line-height: 1.25;
+    white-space: pre-line;
+}
+
+.tour-page img[src*="featured-greta-van-fleet"] {
+    display: block;
+    width: 110%;
+    max-width: none;
+    height: auto;
+    margin-left: -5%;
+}
+
+.tour-page .container.text-center .row {
+    width: 90%;
+    margin: 30px auto 0;
+    justify-content: center;
+}
+
+.tour-page .container.text-center .col {
+    text-align: center;
+}
+
+.site > .container:first-child {
+    max-width: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    align-items: flex-end !important;
+    justify-content: space-between !important;
+    margin-bottom: 0 !important;
+}
+
+header > a {
+    align-self: flex-start;
+}
+
+header .nav {
+    align-self: flex-end;
+}
+
+header .nav-link {
+    padding: 5px 12px !important;
+    font-size: 17px;
+}
+
+header .nav-item:not(:last-child) {
+    border-right: 1px solid white;
+}
+
+
+@media (max-width: 600px) {
+
+    header {
+        min-height: 67px;
+        padding: 3px 5px !important;
+        flex-wrap: nowrap !important;
+    }
+
+    header img {
+        width: 100px !important;
+        height: 55px !important;
+    }
+
+    header .nav {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    header .nav-link {
+        font-size: 12px;
+        padding: 3px !important;
+    }
+
+    footer {
+        padding: 25px 5px !important;
+        min-height: 65px;
+    }
+
+    footer p {
+        font-size: 13px;
+    }
+
+    .about-page .card {
+        width: calc(50% - 22px) !important;
+        margin: 5px 8px 10px;
+        padding: 8px;
+    }
+
+    .about-page .card-body {
+        min-height: 130px;
+    }
+
+    .music-page .ratio {
+        width: 82%;
+        margin-bottom: 26px;
+    }
+
+    .discography-page .site > .d-flex {
+        gap: 15px;
+        margin: 15px 6px 20px;
+    }
+
+    .discography-page .flex-shrink-0 img {
+        width: 98px !important;
+        height: 98px !important;
+    }
+
+    .tour-page .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tour-page .col {
+        width: 100%;
+    }
+}
+
